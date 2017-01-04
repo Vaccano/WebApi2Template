@@ -9,7 +9,7 @@
 
 4. Repeat step 3 with DataAccessLayer\App.config (optional: This is a design time connection)
 
-5. Run the project and navigate a Chrome to http://localhost:58723/api/WebApi2Template/Origins (Note your port will likely be different.)
+5. Run (with the WebApi2Template project as the startup project) and navigate a Chrome to http://localhost:58723/api/WebApi2Template/Origins (Note your port will likely be different.)
 
 Result: "Unable to create a null constant value of type 'DataContracts.StateContract'. Only entity types, enumeration types or primitive types are supported in this context.",
 
