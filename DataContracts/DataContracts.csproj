@@ -45,11 +45,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="OriginContract.cs" />
-    <Compile Include="ShipmentContract.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ShipmentReferenceData.cs" />
     <Compile Include="StateContract.cs" />
-    <Compile Include="WidgetContract.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

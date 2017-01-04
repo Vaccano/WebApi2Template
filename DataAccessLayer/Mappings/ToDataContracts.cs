@@ -20,11 +20,5 @@ namespace DataAccessLayer.Mappings
             var originContract = mapper.Map<List<OriginContract>>(origins);
             return originContract;
         }
-
-        public static ShipmentContract ToDataContract(this Shipment shipment)
-        {
-            var shipmentContract = mapper.Map<ShipmentContract>(shipment);
-            return shipmentContract;
-        }
     }
 }

@@ -12,7 +12,6 @@ namespace DataAccessLayer
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Origin()
         {
-            Shipments = new HashSet<Shipment>();
         }
 
         public int OriginId { get; set; }
@@ -32,8 +31,5 @@ namespace DataAccessLayer
         public int StateId { get; set; }
 
         public virtual State State { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Shipment> Shipments { get; set; }
     }
 }

@@ -35,12 +35,7 @@ namespace DataAccessLayer
             contextProvider.Database.Log = s => System.Diagnostics.Debug.WriteLine(s);
         }
 
-        public ShipmentContract GetShipmentById(long shipmentId)
-        {
-            var shipment = contextProvider.Shipments.FirstOrDefault(x => x.ShipmentId == shipmentId);
-            return shipment.ToDataContract();
-        }
-
+        // Manual Mapping for Origins method.  Does not use Automapper
         //public IQueryable<OriginContract> Origins()
         //{
         //    var origins = contextProvider.Origins.Select(origin => new OriginContract
@@ -66,20 +61,5 @@ namespace DataAccessLayer
         {
             return contextProvider.Origins.ProjectTo<OriginContract>(mapper.ConfigurationProvider);
         }
-
-        public ShipmentReferenceDataContract GetShipmentReferenceData()
-        {
-            var origins = contextProvider.Origins.Include("State").OrderBy(x => x.Code).ToList();
-
-
-            var shipmentReferenceData = new ShipmentReferenceDataContract
-            {
-                Origins = origins.ToDataContract()
-            };
-
-            return shipmentReferenceData;
-        }
-
-
     }
 }

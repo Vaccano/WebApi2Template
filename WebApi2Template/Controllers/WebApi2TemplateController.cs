@@ -27,12 +27,6 @@ namespace WebApi2Template.Controllers
         }
         
         [HttpGet]
-        public ShipmentReferenceDataContract ShipmentReferenceData()
-        {
-            return dataAccess.GetShipmentReferenceData();
-        }
-        
-        [HttpGet]
         public IQueryable<OriginContract> Origins()
         {
             return dataAccess.Origins();

@@ -12,9 +12,7 @@ namespace DataAccessLayer
         {}
 
         public virtual DbSet<Origin> Origins { get; set; }
-        public virtual DbSet<Shipment> Shipments { get; set; }
         public virtual DbSet<State> States { get; set; }
-        public virtual DbSet<Widget> Widgets { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -30,10 +28,6 @@ namespace DataAccessLayer
                 .Property(e => e.City)
                 .IsUnicode(false);
             
-            modelBuilder.Entity<Shipment>()
-                .Property(e => e.Airbill)
-                .IsUnicode(false);
-
             modelBuilder.Entity<State>()
                 .Property(e => e.Abbreviation)
                 .IsUnicode(false);
