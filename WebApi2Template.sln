@@ -1,0 +1,81 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi2Template", "WebApi2Template\WebApi2Template.csproj", "{896E1DB2-E3CF-48E1-8761-DC5F2E8470B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "DataAccessLayer\DataAccessLayer.csproj", "{ADB4E4D3-5D54-4B9A-A3C0-FACED6741BCD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Setup", "Setup\Setup.csproj", "{B16B4773-7177-4B26-82F8-7E45A9765FEB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InversionOfControl", "InversionOfControl\InversionOfControl.csproj", "{9B772B02-301D-46CF-9890-53F92FC65670}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{4CC6DD58-D112-4C6E-8193-1BD9548123B6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{34D875FD-BDDA-4D14-919A-61BBBC222D6F}"
+	ProjectSection(SolutionItems) = preProject
+		MultiProjectTemplate.vstemplate = MultiProjectTemplate.vstemplate
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataContracts", "DataContracts\DataContracts.csproj", "{B001AF31-3675-455A-B628-254751091B65}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{896E1DB2-E3CF-48E1-8761-DC5F2E8470B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{896E1DB2-E3CF-48E1-8761-DC5F2E8470B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{896E1DB2-E3CF-48E1-8761-DC5F2E8470B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{896E1DB2-E3CF-48E1-8761-DC5F2E8470B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADB4E4D3-5D54-4B9A-A3C0-FACED6741BCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADB4E4D3-5D54-4B9A-A3C0-FACED6741BCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADB4E4D3-5D54-4B9A-A3C0-FACED6741BCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADB4E4D3-5D54-4B9A-A3C0-FACED6741BCD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B16B4773-7177-4B26-82F8-7E45A9765FEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B16B4773-7177-4B26-82F8-7E45A9765FEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B16B4773-7177-4B26-82F8-7E45A9765FEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B16B4773-7177-4B26-82F8-7E45A9765FEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B772B02-301D-46CF-9890-53F92FC65670}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B772B02-301D-46CF-9890-53F92FC65670}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B772B02-301D-46CF-9890-53F92FC65670}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B772B02-301D-46CF-9890-53F92FC65670}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CC6DD58-D112-4C6E-8193-1BD9548123B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CC6DD58-D112-4C6E-8193-1BD9548123B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CC6DD58-D112-4C6E-8193-1BD9548123B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CC6DD58-D112-4C6E-8193-1BD9548123B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B001AF31-3675-455A-B628-254751091B65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B001AF31-3675-455A-B628-254751091B65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B001AF31-3675-455A-B628-254751091B65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B001AF31-3675-455A-B628-254751091B65}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfsprod:8080/tfs/it%20development
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Common\\Common.csproj
+		SccProjectName1 = Common
+		SccLocalPath1 = Common
+		SccProjectUniqueName2 = DataAccessLayer\\DataAccessLayer.csproj
+		SccProjectName2 = DataAccessLayer
+		SccLocalPath2 = DataAccessLayer
+		SccProjectUniqueName3 = InversionOfControl\\InversionOfControl.csproj
+		SccProjectName3 = InversionOfControl
+		SccLocalPath3 = InversionOfControl
+		SccProjectUniqueName4 = Setup\\Setup.csproj
+		SccProjectName4 = Setup
+		SccLocalPath4 = Setup
+		SccProjectUniqueName5 = WebApi2Template\\WebApi2Template.csproj
+		SccProjectName5 = WebApi2Template
+		SccLocalPath5 = WebApi2Template
+		SccProjectUniqueName6 = DataContracts\\DataContracts.csproj
+		SccProjectName6 = DataContracts
+		SccLocalPath6 = DataContracts
+	EndGlobalSection
+EndGlobal

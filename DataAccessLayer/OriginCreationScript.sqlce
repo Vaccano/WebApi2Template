@@ -1,0 +1,263 @@
+-- Script Date: 8/8/2016 5:44 PM  - ErikEJ.SqlCeScripting version 3.5.2.42
+CREATE TABLE [Origin] (
+  [OriginId] int IDENTITY (1,1) NOT NULL
+, [Code] nvarchar(10) NOT NULL
+, [Name] nvarchar(100) NOT NULL
+, [City] nvarchar(100) NOT NULL
+, [StateId] int NOT NULL
+);
+GO
+ALTER TABLE [Origin] ADD CONSTRAINT [PK_Origin] PRIMARY KEY ([OriginId]);
+GO
+
+-- Create origin rows
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES (N'AGS', N'Bush Field', N'Augusta', 11);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES (N'ABI', N'Abilene Municipal', N'Abilene', 44);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES (N'ALB', N'Albany County Airport', N'Albany', 33);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES (N'ATL', N'Hartsfield International Airport', N'Atlanta', 11);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES (N'MSP', N'Minneapolis St. Paul International', N'Minneapolis', 24);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES (N'DFW', N'Dallas Ft. Worth International', N'Dallas', 44);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES (N'IAH', N'Houston International', N'Houston', 44);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES (N'ABQ', N'Albuquerque Intl Airport', N'Albuquerque', 32);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES (N'PBI', N'Palm Beach Intl Airport', N'West Palm Beach', 10);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES (N'FLL', N'Fort Lauderdale-Hollywood Intl Airport', N'Fort Lauderdale', 10);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES (N'ABR', N'Aberdeen Regional Airport', N'Aberdeen', 42);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES (N'AEX', N'Esler Field', N'Alexandria', 19);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES (N'AMA', N'Amarillo International Airport', N'Amarillo', 44);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES (N'AUS', N'Robert Mueller Municipal Airport', N'Austin', 44);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES (N'AVL', N'Asheville Municipal Airport', N'Asheville', 43);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES (N'AZO', N'Kalamazoo/Battle Creek Intl', N'Kalamazoo', 23);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES (N'BDL', N'Bradley International Airport', N'Hartford', 7);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES (N'BFF', N'Scottsbluff Airport', N'Scottsbluff', 28);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES (N'CRW', N'Charleston, Yeager Airport', N'Charleston', 49);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES (N'BHM', N'Birmingham International Airport', N'Birmingham', 1);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES (N'BIL', N'Billings, Logan Internatioanl Airport', N'Billings', 27);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES (N'BIS', N'Bismarch Municipal Airport', N'Bismarck', 35);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES (N'BNA', N'Nashville International Airport', N'Nashville', 43);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES (N'BOI', N'Boise, Gowen Field', N'Boise', 13);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES (N'BOS', N'Logan International Airport', N'Boston', 22);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES (N'BTV', N'Burlington International Airport', N'Burlington', 46);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES (N'BUR', N'Burbank Glendale Pasadena Airport', N'Burbank', 5);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES (N'BWI', N'Baltimore/Washington International', N'Baltimore', 21);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES (N'CAE', N'Columbia Metropolitan Airport', N'Columbia', 41);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES (N'CLE', N'Hopkins International Airport', N'Cleveland', 36);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES (N'CLT', N'Charlotte/Douglas Intl Airport', N'Charlotte', 34);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES (N'COU', N'Columiba Regional Airport', N'Columbia', 26);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES (N'CVG', N'Cincinnati-Northern Kentucky Intl Airport', N'Cincinnati', 36);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES (N'DEN', N'Denver International Airport', N'Denver', 6);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES (N'DRO', N'Durango La Plata Field', N'Durango', 6);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES (N'DTW', N'Detroit Metropolitan Airport', N'Detroit', 23);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES (N'ELP', N'El Paso International Airport', N'El Paso', 44);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES (N'EVV', N'Evansville Regional Airport', N'Evansville', 15);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES (N'EWR', N'Newark International Airport', N'Newark', 31);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES (N'FAT', N'Fresno-Yosemite Intl Airport', N'Fresno', 5);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES (N'FSD', N'Sioux Falls Regional Airport', N'Sioux Falls', 42);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES (N'GEG', N'Spokane International Airport', N'Spokane', 48);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES (N'GJT', N'Grand Junction, Walker Field', N'Grand Junction', 6);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES (N'HYS', N'Hays Municipal Airport', N'Hays', 17);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES (N'GRK', N'Kileen Municipal Airport', N'Kileen', 44);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES (N'IND', N'Indianapolis International Airport', N'Indianapolis', 15);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES (N'JAC', N'Jackson Hole Airport', N'Jackson Hole', 51);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES (N'JAN', N'Allen C Thompson Field', N'Jackson', 25);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES (N'KEM', N'Kemmerer', N'Kemmerer', 51);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES (N'LAS', N'McCarranInternational Airport', N'Las Vegas', 29);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES (N'LAX', N'Los Angeles Intl Airport', N'Los Angeles', 5);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES (N'LCH', N'Lake Charles Municipal Airport', N'Lake Charles', 19);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES (N'LFT', N'Lafeyette Regional Airport', N'Lafayette', 19);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES (N'LIT', N'Little Rock Regional Airport', N'Little Rock ', 4);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES (N'MAF', N'Midland Odessa Airport', N'Odessa', 44);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES (N'MEM', N'Memphis International Airport', N'Memphis', 43);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES (N'MGM', N'Montgomery Dannelly Airport', N'Montogmery', 1);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES (N'MKE', N'General Mitchell Intl Airport', N'Milwaukee', 50);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES (N'OAK', N'Oakland International Airport', N'Oakland', 5);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES (N'OGG', N'Kahului Airport', N'Kahului', 12);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES (N'OKC', N'Will Rogers Work Airport', N'Oklahoma City', 37);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES ( N'OMA', N'Eppley Airfield', N'Omaha', 28);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES ( N'ORD', N'O''Hara International Airport', N'Chicago', 14);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES ( N'PDX', N'Portland International Airport', N'Portland', 38);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES ( N'PHL', N'Philadelphia International Airport', N'Philadelphia', 39);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES ( N'PHX', N'Sky Harbor Intl Airport', N'Phoenix', 3);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES ( N'RKS', N'Rock Springs Sweetwater City Airport', N'Rock Springs', 51);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES ( N'RNO', N'Reno/Tahoe Intl Airport', N'Reno', 29);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES ( N'ROC', N'Greater Rochester Intl Airport', N'Rochester', 33);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES ( N'SHV', N'Shreveport Regional Airport', N'Shreveport', 19);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES ( N'SJC', N'San Jose Intl Airport', N'San Jose', 5);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES ( N'SMF', N'Sacramento Metropolitan Airport', N'Sacramento', 5);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES ( N'SNA', N'John Wayne Airport', N'Orange County', 5);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES ( N'SPI', N'Springfield Capital Airport', N'Springfield', 14);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES ( N'STL', N'Lambert-St. Louis Intl Airport', N'St. Louis', 26);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES ( N'SWF', N'Newburgh, Stewart Intl Airport', N'Newburgh', 33);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES ( N'LAC', N'Syracuse Intl Airport', N'Syracuse', 33);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES ( N'TPA', N'Tampa International Airport', N'Tampa', 10);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES ( N'TRI', N'Tri Citys Regional Airport', N'Kingport', 43);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES ( N'TUS', N'Tucson International Airport', N'Tuscon', 3);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES ( N'TWF', N'Twin Falls Airport', N'Twin Falls', 13);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES ( N'TXK', N'Texarkana Municipal Airport', N'Texarkana', 4);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES ( N'TYR', N'Pounds Field', N'Tyler', 44);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES ( N'SLC', N'Salt Lake City Intl. Airport', N'Salt Lake City', 45);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES ( N'VLD', N'Valdosta Regional', N'Valdosta ', 11);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES ( N'JFK', N'John F Kennedy Intl Airport', N'New York', 33);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES ( N'MBS', N'Midland-Bay-Saginaw', N'Michigan', 23);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES ( N'BGM', N'Binghamton Regional Airport', N'Binghamton', 33);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES ( N'CHS', N'Charleston International Airport', N'Charleston', 41);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES ( N'DSM', N'Dees Moines International Airport', N'Des Moines', 16);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES ( N'BUF', N'Buffalo-Niagara International Airport', N'Buffalo', 33);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES ( N'CPR', N'Casper, Natrona County Intl', N'Casper', 51);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES ( N'CWA', N'Central Wisconsin Airport', N'Wausau', 50);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES ( N'LAR', N'Laramie Regional Airport', N'Laramie', 51);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES ( N'PIT', N'Pittsburgh International Airport', N'Pittsburgh', 39);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES ( N'MLI', N'Moline Airport', N'Moline', 14);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES ( N'MFR', N'Medford, Rogue Valley Intl Airport', N'Medford', 38);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES ( N'EUG', N'Eugene Airport', N'Eugene', 38);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES ( N'TUL', N'International', N'Tulsa', 37);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES ( N'RDU', N'Raleigh-Durham Airport', N'Raliegh-Durham', 34);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES ( N'SRQ', N'Bradenton', N'Sarasota', 10);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES ( N'IAD', N'Dulles Intl', N'Washington', 9);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES ( N'GSP', N'Greenville-Spartanburg', N'Greenville', 41);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES ( N'LBB', N'Lubbock International Airport', N'Lubbock', 44);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES ( N'CID', N'Cedar Rapids Municipal Airport', N'Iowa City', 16);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES ( N'BPT', N'Jefferson County Airport', N'Beaumont', 44);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES ( N'GNV', N'Gainesville Regional Airport', N'Gainesville', 10);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES ( N'ACT', N'Municipal', N'Waco', 44);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES ( N'PNS', N'Pensacola Regional Airport', N'Pensacola', 10);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES ( N'SYR', N'Syracuse Hancock Intl Airport', N'Syracuse', 33);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES ( N'CRP', N'Corpus Christi International Airport', N'Corpus Christi', 44);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES ( N'BTR', N'Baton Rouge Metropolitan Airport/Ryan Field', N'Baton Rouge', 19);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES ( N'PDT', N'Eastern Oregon Regional Airport at Pendleton', N'Pendleton', 38);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES ( N'BRK', N'Quality Transportation', N'Brooklyn', 33);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES ( N'ALS', N'Alamosa Municipal Airport', N'Alamosa', 6);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES ( N'MFE', N'McAllen Miller Airport', N'McAllen', 44);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES ( N'DAY', N'James M. Cox Dayton International', N'Dayton', 36);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES ( N'SDF', N'Louisville International Airport ', N'Louisville', 18);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES ( N'LEX', N'Blue Grass Airport ', N'Lexington', 18);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES ( N'DLN', N'Barrett Hospital', N'Dillon', 27);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES ( N'IDA', N'Idaho Falls Regional Airport', N'Idaho Falls', 13);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES ( N'AND', N'Gamma', N'Andalusia', 1);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES ( N'SJT', N'San Angelo', N'San Angelo', 44);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES ( N'MBF', N'Quality Transportation-MBF', N'Manalapan', 31);
+GO
+INSERT INTO [Origin] ([Code], [Name], [City], [StateId]) VALUES ( N'ABE', N'Lehigh Valley International Airport', N'Allentown', 39);
+GO

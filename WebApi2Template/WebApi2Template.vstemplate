@@ -1,0 +1,69 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+    <TemplateData>
+        <Name>WebApi2BreezeJsTemplate</Name>
+        <Description>Web API 2 template setup to create a BreezeJs controller</Description>
+        <ProjectType>CSharp</ProjectType>
+        <ProjectSubType>
+        </ProjectSubType>
+        <SortOrder>1000</SortOrder>
+        <CreateNewFolder>true</CreateNewFolder>
+        <DefaultName>WebApi2BreezeJsTemplate</DefaultName>
+        <ProvideDefaultName>true</ProvideDefaultName>
+        <LocationField>Enabled</LocationField>
+        <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+        <Icon>__TemplateIcon.ico</Icon>
+    </TemplateData>
+    <TemplateContent>
+        <Project TargetFileName="WebApi2BreezeJsTemplate.csproj" File="$safeprojectname$.csproj" ReplaceParameters="true">
+            <Folder Name="App_Start" TargetFolderName="App_Start">
+                <ProjectItem ReplaceParameters="true" TargetFileName="BreezeWebApiConfig.cs">BreezeWebApiConfig.cs</ProjectItem>
+                <ProjectItem ReplaceParameters="true" TargetFileName="WebApiConfig.cs">WebApiConfig.cs</ProjectItem>
+            </Folder>
+            <Folder Name="Controllers" TargetFolderName="Controllers">
+                <ProjectItem ReplaceParameters="true" TargetFileName="LoggingController.cs">LoggingController.cs</ProjectItem>
+                <ProjectItem ReplaceParameters="true" TargetFileName="$safeprojectname$Controller.cs">WebApi2BreezeJsTemplateController.cs</ProjectItem>
+            </Folder>
+            <ProjectItem ReplaceParameters="true" TargetFileName="Global.asax">Global.asax</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="Global.asax.cs">Global.asax.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="index.html">index.html</ProjectItem>
+            <Folder Name="Properties" TargetFolderName="Properties">
+                <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+            </Folder>
+            <ProjectItem ReplaceParameters="false" TargetFileName="ReadMe.md">ReadMe.md</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="Web.config">Web.config</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="Web.Debug.config">Web.Debug.config</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="Web.Release.config">Web.Release.config</ProjectItem>
+        </Project>
+    </TemplateContent>
+    <WizardExtension>
+        <Assembly>NuGet.VisualStudio.Interop, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Assembly>
+        <FullClassName>NuGet.VisualStudio.TemplateWizard</FullClassName>
+    </WizardExtension>
+    <WizardData>
+        <packages>
+            <package id="Breeze.Server.ContextProvider" version="1.5.5" targetFramework="net452" />
+            <package id="Breeze.Server.ContextProvider.EF6" version="1.5.5" targetFramework="net452" />
+            <package id="Breeze.Server.WebApi2" version="1.5.5" targetFramework="net452" />
+            <package id="EntityFramework" version="6.0.0" targetFramework="net452" />
+            <package id="log4net" version="2.0.5" targetFramework="net452" />
+            <package id="Microsoft.AspNet.Cors" version="5.2.3" targetFramework="net452" />
+            <package id="Microsoft.AspNet.WebApi" version="5.2.3" targetFramework="net452" />
+            <package id="Microsoft.AspNet.WebApi.Client" version="5.2.3" targetFramework="net452" />
+            <package id="Microsoft.AspNet.WebApi.Core" version="5.2.3" targetFramework="net452" />
+            <package id="Microsoft.AspNet.WebApi.Cors" version="5.2.3" targetFramework="net452" />
+            <package id="Microsoft.AspNet.WebApi.OData" version="5.2.2" targetFramework="net452" />
+            <package id="Microsoft.AspNet.WebApi.WebHost" version="5.2.3" targetFramework="net452" />
+            <package id="Microsoft.CodeDom.Providers.DotNetCompilerPlatform" version="1.0.0" targetFramework="net452" />
+            <package id="Microsoft.Data.Edm" version="5.6.0" targetFramework="net452" />
+            <package id="Microsoft.Data.OData" version="5.6.0" targetFramework="net452" />
+            <package id="Microsoft.Net.Compilers" version="1.0.0" targetFramework="net452" developmentDependency="true" />
+            <package id="Microsoft.Web.Infrastructure" version="1.0.0.0" targetFramework="net452" />
+            <package id="Newtonsoft.Json" version="6.0.4" targetFramework="net452" />
+            <package id="SimpleInjector" version="3.2.0" targetFramework="net452" />
+            <package id="SimpleInjector.Extensions.ExecutionContextScoping" version="3.2.0" targetFramework="net452" />
+            <package id="SimpleInjector.Integration.WebApi" version="3.2.0" targetFramework="net452" />
+            <package id="System.Spatial" version="5.6.0" targetFramework="net452" />
+            <package id="WebActivatorEx" version="2.0" targetFramework="net452" />
+        </packages>
+    </WizardData>
+</VSTemplate>

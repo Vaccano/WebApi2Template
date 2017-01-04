@@ -1,0 +1,114 @@
+-- Script Date: 8/8/2016 6:11 PM  - ErikEJ.SqlCeScripting version 3.5.2.42
+CREATE TABLE [State] (
+  [StateId] int NOT NULL
+, [Abbreviation] nvarchar(2) NOT NULL
+, [Name] nvarchar(50) NOT NULL
+);
+GO
+ALTER TABLE [State] ADD CONSTRAINT [PK_State] PRIMARY KEY ([StateId]);
+GO
+
+-- Insert the data
+
+INSERT INTO [State]([StateId],[Abbreviation], [Name]) VALUES (1, N'AL', N'Alabama');
+GO
+INSERT INTO [State]([StateId],[Abbreviation], [Name]) VALUES (2, N'AK', N'Alaska');
+GO
+INSERT INTO [State]([StateId],[Abbreviation], [Name]) VALUES (3, N'AZ', N'Arizona');
+GO
+INSERT INTO [State]([StateId],[Abbreviation], [Name]) VALUES (4, N'AR', N'Arkansas');
+GO
+INSERT INTO [State]([StateId],[Abbreviation], [Name]) VALUES (5, N'CA', N'California');
+GO
+INSERT INTO [State]([StateId],[Abbreviation], [Name]) VALUES (6, N'CO', N'Colorado');
+GO
+INSERT INTO [State]([StateId],[Abbreviation], [Name]) VALUES (7, N'CT', N'Connecticut');
+GO
+INSERT INTO [State]([StateId],[Abbreviation], [Name]) VALUES (8, N'DE', N'Delaware');
+GO
+INSERT INTO [State]([StateId],[Abbreviation], [Name]) VALUES (9, N'DC', N'District of Columbia');
+GO
+INSERT INTO [State]([StateId],[Abbreviation], [Name]) VALUES (10, N'FL', N'Florida');
+GO
+INSERT INTO [State]([StateId],[Abbreviation], [Name]) VALUES (11, N'GA', N'Georgia');
+GO
+INSERT INTO [State]([StateId],[Abbreviation], [Name]) VALUES (12, N'HI', N'Hawaii');
+GO
+INSERT INTO [State]([StateId],[Abbreviation], [Name]) VALUES (13, N'ID', N'Idaho');
+GO
+INSERT INTO [State]([StateId],[Abbreviation], [Name]) VALUES (14, N'IL', N'Illinois');
+GO
+INSERT INTO [State]([StateId],[Abbreviation], [Name]) VALUES (15, N'IN', N'Indiana');
+GO
+INSERT INTO [State]([StateId],[Abbreviation], [Name]) VALUES (16, N'IA', N'Iowa');
+GO
+INSERT INTO [State]([StateId],[Abbreviation], [Name]) VALUES (17, N'KS', N'Kansas');
+GO
+INSERT INTO [State]([StateId],[Abbreviation], [Name]) VALUES (18, N'KY', N'Kentucky');
+GO
+INSERT INTO [State]([StateId],[Abbreviation], [Name]) VALUES (19, N'LA', N'Louisiana');
+GO
+INSERT INTO [State]([StateId],[Abbreviation], [Name]) VALUES (20, N'ME', N'Maine');
+GO
+INSERT INTO [State]([StateId],[Abbreviation], [Name]) VALUES (21, N'MD', N'Maryland');
+GO
+INSERT INTO [State]([StateId],[Abbreviation], [Name]) VALUES (22, N'MA', N'Massachusetts');
+GO
+INSERT INTO [State]([StateId],[Abbreviation], [Name]) VALUES (23, N'MI', N'Michigan');
+GO
+INSERT INTO [State]([StateId],[Abbreviation], [Name]) VALUES (24, N'MN', N'Minnesota');
+GO
+INSERT INTO [State]([StateId],[Abbreviation], [Name]) VALUES (25, N'MS', N'Mississippi');
+GO
+INSERT INTO [State]([StateId],[Abbreviation], [Name]) VALUES (26, N'MO', N'Missouri');
+GO
+INSERT INTO [State]([StateId],[Abbreviation], [Name]) VALUES (27, N'MT', N'Montana');
+GO
+INSERT INTO [State]([StateId],[Abbreviation], [Name]) VALUES (28, N'NE', N'Nebraska');
+GO
+INSERT INTO [State]([StateId],[Abbreviation], [Name]) VALUES (29, N'NV', N'Nevada');
+GO
+INSERT INTO [State]([StateId],[Abbreviation], [Name]) VALUES (30, N'NH', N'New Hampshire');
+GO
+INSERT INTO [State]([StateId],[Abbreviation], [Name]) VALUES (31, N'NJ', N'New Jersey');
+GO
+INSERT INTO [State]([StateId],[Abbreviation], [Name]) VALUES (32, N'NM', N'New Mexico');
+GO
+INSERT INTO [State]([StateId],[Abbreviation], [Name]) VALUES (33, N'NY', N'New York');
+GO
+INSERT INTO [State]([StateId],[Abbreviation], [Name]) VALUES (34, N'NC', N'North Carolina');
+GO
+INSERT INTO [State]([StateId],[Abbreviation], [Name]) VALUES (35, N'ND', N'North Dakota');
+GO
+INSERT INTO [State]([StateId],[Abbreviation], [Name]) VALUES (36, N'OH', N'Ohio');
+GO
+INSERT INTO [State]([StateId],[Abbreviation], [Name]) VALUES (37, N'OK', N'Oklahoma');
+GO
+INSERT INTO [State]([StateId],[Abbreviation], [Name]) VALUES (38, N'OR', N'Oregon');
+GO
+INSERT INTO [State]([StateId],[Abbreviation], [Name]) VALUES (39, N'PA', N'Pennsylvania');
+GO
+INSERT INTO [State]([StateId],[Abbreviation], [Name]) VALUES (40, N'RI', N'Rhode Island');
+GO
+INSERT INTO [State]([StateId],[Abbreviation], [Name]) VALUES (41, N'SC', N'South Carolina');
+GO
+INSERT INTO [State]([StateId],[Abbreviation], [Name]) VALUES (42, N'SD', N'South Dakota');
+GO
+INSERT INTO [State]([StateId],[Abbreviation], [Name]) VALUES (43, N'TN', N'Tennessee');
+GO
+INSERT INTO [State]([StateId],[Abbreviation], [Name]) VALUES (44, N'TX', N'Texas');
+GO
+INSERT INTO [State]([StateId],[Abbreviation], [Name]) VALUES (45, N'UT', N'Utah');
+GO
+INSERT INTO [State]([StateId],[Abbreviation], [Name]) VALUES (46, N'VT', N'Vermont');
+GO
+INSERT INTO [State]([StateId],[Abbreviation], [Name]) VALUES (47, N'VA', N'Virginia');
+GO
+INSERT INTO [State]([StateId],[Abbreviation], [Name]) VALUES (48, N'WA', N'Washington');
+GO
+INSERT INTO [State]([StateId],[Abbreviation], [Name]) VALUES (49, N'WV', N'West Virginia');
+GO
+INSERT INTO [State]([StateId],[Abbreviation], [Name]) VALUES (50, N'WI', N'Wisconsin');
+GO
+INSERT INTO [State]([StateId],[Abbreviation], [Name]) VALUES (51, N'WY', N'Wyoming');
+GO

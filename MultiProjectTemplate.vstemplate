@@ -1,0 +1,34 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="ProjectGroup">
+    <TemplateData>
+        <Name>WebApi2Template</Name>
+        <Description>Web API 2 template setup for ARUP development</Description>
+        <ProjectType>CSharp</ProjectType>
+        <ProjectSubType>Aurelia Enterprise</ProjectSubType>
+        <SortOrder>1000</SortOrder>
+        <CreateNewFolder>true</CreateNewFolder>
+        <DefaultName>WebApi2Template</DefaultName>
+        <ProvideDefaultName>true</ProvideDefaultName>
+        <LocationField>Enabled</LocationField>
+        <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+        <Icon>__TemplateIcon.ico</Icon>
+    </TemplateData>
+    <TemplateContent>
+        <ProjectCollection>
+            <ProjectTemplateLink>
+                WebApi2Template\WebApi2Template.vstemplate
+            </ProjectTemplateLink>
+            <ProjectTemplateLink>
+                Setup\Setup.vstemplate
+            </ProjectTemplateLink>
+            <ProjectTemplateLink>
+                InversionOfControl\InversionOfControl.vstemplate
+            </ProjectTemplateLink>
+            <ProjectTemplateLink>
+                DataAccessLayer\DataAccessLayer.vstemplate
+            </ProjectTemplateLink>
+            <ProjectTemplateLink>
+                Common\Common.vstemplate
+            </ProjectTemplateLink>
+        </ProjectCollection>
+    </TemplateContent>
+</VSTemplate>

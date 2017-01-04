@@ -1,0 +1,10 @@
+-- Script Date: 8/8/2016 5:38 PM  - ErikEJ.SqlCeScripting version 3.5.2.42
+CREATE TABLE [Shipment] (
+  [ShipmentId] bigint IDENTITY (1,1) NOT NULL
+, [CreatedWhen] datetime NOT NULL
+, [Airbill] nvarchar(30) NOT NULL
+, [OriginId] int NOT NULL
+);
+GO
+ALTER TABLE [Shipment] ADD CONSTRAINT [PK_Shipment] PRIMARY KEY ([ShipmentId]);
+GO

@@ -1,0 +1,11 @@
+-- Script Date: 8/8/2016 6:17 PM  - ErikEJ.SqlCeScripting version 3.5.2.42
+CREATE TABLE [Widget] (
+  [WidgetId] bigint IDENTITY (1,1) NOT NULL
+, [IsLargeWidget] bit NOT NULL
+, [WidgetNumber] int NOT NULL
+, [IsStainless] bit NOT NULL
+, [CreatedWhen] datetime NOT NULL
+);
+GO
+ALTER TABLE [Widget] ADD CONSTRAINT [PK_Widget] PRIMARY KEY ([WidgetId]);
+GO
